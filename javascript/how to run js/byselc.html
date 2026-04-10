@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Like Button Example</title>
+<style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+        }
+        #main-header {
+            color: black;
+        }
+        .card {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 200px;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2 id="main-header">My Post</h2>
+    
+    <div class="card">
+        📸 Beautiful Nature
+    </div>
+    
+    <button onclick="likePost()">Like ❤️</button>
+    <script>
+        function likePost() {
+            
+            let card = document.querySelector(".card");
+            card.style.backgroundColor = "lightpink";
+            
+            let header = document.querySelector("#main-header");
+            header.innerText = "You liked the post ❤️";
+            
+            let btn = document.querySelector("button");
+            btn.innerText = "Liked ❤️";
+        }
+    </script>
+</body>
+</html>
