@@ -37,7 +37,7 @@ function calculateResult() {
         grade = "F";
         gradeClass = "grade-F";
     }
-    // Step 6: Determine pass or fail
+    
     let resultStatus;
     let resultClass;
     if (averageMarks >= 40) {
@@ -47,7 +47,7 @@ function calculateResult() {
         resultStatus = "FAIL";
         resultClass = "fail";
     }
-    // Step 7: Display results on the webpage
+    
     let resultBox = document.getElementById("resultBox");
     resultBox.innerHTML = `
         <h2>📊 Result Summary</h2>
