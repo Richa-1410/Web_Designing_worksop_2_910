@@ -27,3 +27,10 @@ console.log(divide(6,3));
 //arrow funcn with no parameters
 let hi =()=> console.log("hi"); //always through funcn expression
 hi();
+//arrow funcn with one parameter
+let greetUser = (name) => console.log(`Hello, ${name}!`);
+greetUser("Alice");
+//map on array
+let arr = [1,2,3,4,5];
+let squaredArr = arr.map(num => num * num);
+console.log(squaredArr);
