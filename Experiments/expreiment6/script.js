@@ -24,10 +24,23 @@ let isvisible = true;
 document.getElementById("toggleBtn").onclick = function() {
     if(isvisible){
         para.style.display = "none";   //hide
+        //heading.style.display = "none";
         isvisible = false;
     }
     else{
         para.style.display = "block";  //show
+        //heading.style.display = "block"; //show
         isvisible = true;
     }
 };
+//reset
+document.getElementById("resetBtn").onclick = function() {
+   location.reload();  //reload the page
+};
+//mouse events
+heading.onmouseover = function() {
+    heading.style.color = "red";
+};
+heading.onmouseout = function() {
+    heading.style.color = "black";
+}
