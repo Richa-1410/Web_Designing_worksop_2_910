@@ -19,3 +19,15 @@ document.getElementById("colorBtn").addEventListener("click", function() {
 document.getElementById("fontBtn").addEventListener("click", function() {
     heading.style.fontSize = "40px";
 });
+//show hide paragraph
+let isvisible = true;
+document.getElementById("toggleBtn").onclick = function() {
+    if(isvisible){
+        para.style.display = "none";   //hide
+        isvisible = false;
+    }
+    else{
+        para.style.display = "block";  //show
+        isvisible = true;
+    }
+};
